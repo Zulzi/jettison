@@ -8,7 +8,7 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/peterlabuschagne/jettison/models"
+	"github.com/Zulzi/jettison/models"
 )
 
 type Error struct {

@@ -1,3 +1,3 @@
 package jettison
 
-//go:generate becca --package=github.com/peterlabuschagne/jettison/readme
+//go:generate becca --package=github.com/Zulzi/jettison/readme

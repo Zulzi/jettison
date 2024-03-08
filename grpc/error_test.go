@@ -14,12 +14,12 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/peterlabuschagne/jettison/errors"
-	"github.com/peterlabuschagne/jettison/grpc/internal/jettisonpb"
-	"github.com/peterlabuschagne/jettison/internal"
-	"github.com/peterlabuschagne/jettison/j"
-	"github.com/peterlabuschagne/jettison/jtest"
-	"github.com/peterlabuschagne/jettison/models"
+	"github.com/Zulzi/jettison/errors"
+	"github.com/Zulzi/jettison/grpc/internal/jettisonpb"
+	"github.com/Zulzi/jettison/internal"
+	"github.com/Zulzi/jettison/j"
+	"github.com/Zulzi/jettison/jtest"
+	"github.com/Zulzi/jettison/models"
 )
 
 type source string

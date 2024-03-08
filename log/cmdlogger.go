@@ -7,7 +7,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/peterlabuschagne/jettison/models"
+	"github.com/Zulzi/jettison/models"
 )
 
 // NewCmdLogger returns a stdout human friendly command line logger.
@@ -76,7 +76,7 @@ func parameterString(params []models.KeyValue) string {
 // conciseSource returns the source with the leading package
 // import path abbreviated to first letters only.
 //
-//	github.com/peterlabuschagne/jettison/log/log.go:136 > g/l/j/l/log.go:136
+//	github.com/Zulzi/jettison/log/log.go:136 > g/l/j/l/log.go:136
 func conciseSource(source string) string {
 	split := strings.Split(source, "/")
 	var res []string

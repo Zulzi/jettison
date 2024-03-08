@@ -8,9 +8,9 @@ import (
 
 	"github.com/go-stack/stack"
 
-	"github.com/peterlabuschagne/jettison/errors"
-	"github.com/peterlabuschagne/jettison/internal"
-	"github.com/peterlabuschagne/jettison/trace"
+	"github.com/Zulzi/jettison/errors"
+	"github.com/Zulzi/jettison/internal"
+	"github.com/Zulzi/jettison/trace"
 )
 
 const (

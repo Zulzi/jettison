@@ -7,9 +7,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/peterlabuschagne/jettison/errors"
-	"github.com/peterlabuschagne/jettison/j"
-	"github.com/peterlabuschagne/jettison/log"
+	"github.com/Zulzi/jettison/errors"
+	"github.com/Zulzi/jettison/j"
+	"github.com/Zulzi/jettison/log"
 )
 
 func ExampleNew() {

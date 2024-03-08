@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/peterlabuschagne/jettison/j"
-	"github.com/peterlabuschagne/jettison/log"
-	"github.com/peterlabuschagne/jettison/models"
+	"github.com/Zulzi/jettison/j"
+	"github.com/Zulzi/jettison/log"
+	"github.com/Zulzi/jettison/models"
 )
 
 func TestOutgoingContext(t *testing.T) {

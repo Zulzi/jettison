@@ -3,7 +3,7 @@ package log
 import (
 	"time"
 
-	"github.com/peterlabuschagne/jettison/models"
+	"github.com/Zulzi/jettison/models"
 )
 
 type Level string

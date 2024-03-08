@@ -1,4 +1,4 @@
-module github.com/peterlabuschagne/jettison
+module github.com/Zulzi/jettison
 
 go 1.20
 

@@ -10,12 +10,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/peterlabuschagne/jettison/errors"
-	"github.com/peterlabuschagne/jettison/grpc/test/testgrpc"
-	"github.com/peterlabuschagne/jettison/grpc/test/testpb"
-	"github.com/peterlabuschagne/jettison/j"
-	"github.com/peterlabuschagne/jettison/jtest"
-	"github.com/peterlabuschagne/jettison/log"
+	"github.com/Zulzi/jettison/errors"
+	"github.com/Zulzi/jettison/grpc/test/testgrpc"
+	"github.com/Zulzi/jettison/grpc/test/testpb"
+	"github.com/Zulzi/jettison/j"
+	"github.com/Zulzi/jettison/jtest"
+	"github.com/Zulzi/jettison/log"
 )
 
 func TestNewOverGrpc(t *testing.T) {

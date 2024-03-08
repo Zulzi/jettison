@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/peterlabuschagne/jettison/errors"
-	"github.com/peterlabuschagne/jettison/j"
+	"github.com/Zulzi/jettison/errors"
+	"github.com/Zulzi/jettison/j"
 )
 
 func TestAssert(t *testing.T) {

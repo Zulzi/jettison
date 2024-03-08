@@ -6,11 +6,11 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/peterlabuschagne/jettison/errors"
-	"github.com/peterlabuschagne/jettison/example/examplepb"
-	jetgrpc "github.com/peterlabuschagne/jettison/grpc"
-	"github.com/peterlabuschagne/jettison/j"
-	"github.com/peterlabuschagne/jettison/log"
+	"github.com/Zulzi/jettison/errors"
+	"github.com/Zulzi/jettison/example/examplepb"
+	jetgrpc "github.com/Zulzi/jettison/grpc"
+	"github.com/Zulzi/jettison/j"
+	"github.com/Zulzi/jettison/log"
 )
 
 var _ examplepb.HopperServer = (*Server)(nil)

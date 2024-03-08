@@ -3,7 +3,7 @@ package testdata
 import (
 	"fmt"
 
-	"github.com/peterlabuschagne/jettison/errors"
+	"github.com/Zulzi/jettison/errors"
 	_ "github.com/luno/protocp"
 )
 

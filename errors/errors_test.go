@@ -9,10 +9,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/peterlabuschagne/jettison/errors"
-	"github.com/peterlabuschagne/jettison/internal"
-	"github.com/peterlabuschagne/jettison/j"
-	"github.com/peterlabuschagne/jettison/models"
+	"github.com/Zulzi/jettison/errors"
+	"github.com/Zulzi/jettison/internal"
+	"github.com/Zulzi/jettison/j"
+	"github.com/Zulzi/jettison/models"
 )
 
 func TestNew(t *testing.T) {

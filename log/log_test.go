@@ -12,10 +12,10 @@ import (
 	"github.com/sebdah/goldie/v2"
 	"github.com/stretchr/testify/assert"
 
-	jerrors "github.com/peterlabuschagne/jettison/errors"
-	"github.com/peterlabuschagne/jettison/internal"
-	"github.com/peterlabuschagne/jettison/models"
-	"github.com/peterlabuschagne/jettison/trace"
+	jerrors "github.com/Zulzi/jettison/errors"
+	"github.com/Zulzi/jettison/internal"
+	"github.com/Zulzi/jettison/models"
+	"github.com/Zulzi/jettison/trace"
 )
 
 //go:generate go test -update

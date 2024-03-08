@@ -1,5 +1,5 @@
 package testdata
 
-import "github.com/peterlabuschagne/jettison/errors"
+import "github.com/Zulzi/jettison/errors"
 
 var errMissingCode = errors.New("missing code")

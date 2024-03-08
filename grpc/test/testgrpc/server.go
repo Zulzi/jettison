@@ -7,10 +7,10 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/peterlabuschagne/jettison/errors"
-	jetgrpc "github.com/peterlabuschagne/jettison/grpc"
-	"github.com/peterlabuschagne/jettison/grpc/test/testpb"
-	"github.com/peterlabuschagne/jettison/j"
+	"github.com/Zulzi/jettison/errors"
+	jetgrpc "github.com/Zulzi/jettison/grpc"
+	"github.com/Zulzi/jettison/grpc/test/testpb"
+	"github.com/Zulzi/jettison/j"
 )
 
 type Server struct{}
