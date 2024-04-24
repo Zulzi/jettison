@@ -39,6 +39,19 @@ func KS(key string, value string) MKV {
 	return MKV{key: value}
 }
 
+// STS converts any slice to a comma-separated string.
+func STS[T any](s []T) string {
+	var sb strings.Builder
+	for i, v := range s {
+		if i > 0 {
+			sb.WriteString(", ")
+		}
+		sb.WriteString(fmt.Sprint(v))
+	}
+
+	return sb.String()
+}
+
 // MKV is a multi jettison key value option with default formats of
 // simple values or fmt.Stringer implementations. Complex values
 // like slices, maps, structs are not printed since it is considered
