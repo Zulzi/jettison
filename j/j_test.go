@@ -81,6 +81,34 @@ func BenchmarkFull(b *testing.B) {
 	}
 }
 
+func TestSTS(t *testing.T) {
+	intSlice := []int{1, 2, 3}
+
+	sts := STS(intSlice)
+	require.Equal(t, "1, 2, 3", sts)
+
+	type MyStruct struct {
+		Name string
+		Age  int
+	}
+
+	structSlice := []MyStruct{
+		{"jon", 20},
+		{"jane", 21},
+	}
+
+	sts = STS(structSlice)
+	require.Equal(t, "{jon 20}, {jane 21}", sts)
+
+	structPtrSlice := []*MyStruct{
+		{"jon", 20},
+		{"jane", 21},
+	}
+
+	sts = STS(structPtrSlice)
+	require.Equal(t, "&{jon 20}, &{jane 21}", sts)
+}
+
 var simple = []interface{}{1, 1.0, "1", true}
 
 var tests = []struct {
