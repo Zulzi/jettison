@@ -124,6 +124,17 @@ func Unwrap(err error) error {
 	return stderrors.Unwrap(err)
 }
 
+// Root returns the root error in the error chain.
+func Root(err error) error {
+	for {
+		u := Unwrap(err)
+		if u == nil {
+			return err
+		}
+		err = u
+	}
+}
+
 // Join is an alias of the standard library's errors.Join() function.
 func Join(err ...error) error {
 	return stderrors.Join(err...)
