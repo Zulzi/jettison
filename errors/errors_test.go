@@ -611,3 +611,40 @@ func TestGetLastStackTrace(t *testing.T) {
 		})
 	}
 }
+
+func TestRoot(t *testing.T) {
+	err1 := errors.New("err1")
+
+	testCases := []struct {
+		name        string
+		givenErr    error
+		expectedErr error
+		wantMatch   bool
+	}{
+		{
+			name:        "error wrapped once",
+			givenErr:    errors.Wrap(err1, "inner"),
+			expectedErr: err1,
+			wantMatch:   true,
+		},
+		{
+			name:        "error wrapped twice",
+			givenErr:    errors.Wrap(errors.Wrap(err1, "inner"), "outer"),
+			expectedErr: err1,
+			wantMatch:   true,
+		},
+		{
+			name:        "nil error",
+			givenErr:    nil,
+			expectedErr: nil,
+			wantMatch:   true,
+		},
+	}
+
+	for _, tc := range testCases {
+		t.Run(tc.name, func(t *testing.T) {
+			match := errors.Is(errors.Root(tc.givenErr), tc.expectedErr)
+			assert.Equal(t, tc.wantMatch, match)
+		})
+	}
+}
