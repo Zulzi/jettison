@@ -1,5 +1,5 @@
 PROJECT_NAME := "jettison"
-PKG := "github.com/luno/$(PROJECT_NAME)"
+PKG := "github.com/Zulzi/$(PROJECT_NAME)"
 PKG_LIST := $(shell go list ${PKG}/... | grep -v /vendor/)
 
 .PHONY: vet fmt checkfmt test race
